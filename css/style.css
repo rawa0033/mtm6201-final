@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --bs-body-font-family: 'Kantumruy pro';
+  --bs-primary: #0065f8;
+  --bs-primary-rgb: 0, 101, 248;
+}
+
+.p {
+  font-size: var(--fs-lg);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.btn-light {
+    color: #0065f8;
+    background-color: white;
+    border: 1px solid #0065f8;
+}
+
+.btn-light:hover {
+    background-color: #0065f8;
+    color: white;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-scroll .col-11 {
+  display: inline-block;
+  float: none;
+}
+
+.horizontal-scroll .card {
+  white-space: normal;
+}
+
+.hero-section {
+    background: url('../images/Group 6.png') no-repeat center center;
+    background-size: cover;
+    height: 439px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.upcoming-event-image {
+    background: url('../images/Rectangle 12.png') no-repeat center center;
+    background-size: cover;
+    height: 439px;
+}
+
+footer .list-inline {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
